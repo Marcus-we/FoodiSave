@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+.nunito {
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-weight: 426;
+    font-style: normal;
+  }
