@@ -12,12 +12,17 @@ body {
   @apply flex flex-col min-h-screen relative bg-white text-gray-900
 }
 
-li {
+ol li {
   @apply pt-1 text-lg list-disc list-inside
 
 }
 
 .no-bullet {
   @apply list-none
+}
+
+.list-number {
+  @apply list-disc
+
 }
 

@@ -2,10 +2,11 @@ import React from 'react'
 import FoodImage from "../assets/Food.png";
 
 
-export default function RecipeCard() {
+
+export default function RecipeCard( {setShow } ) {
   return (
     <>
-        <main className="container mx-auto pb-28 pl-10 pr-10 flex-grow nunito">
+        <main className="container mx-auto pl-10 pr-10 flex-grow nunito">
          <div className="grid md:grid-cols-2 shadow-lg p-10 rounded bg-white">
             
             <div className='order-2 md:order-1'>
@@ -34,7 +35,7 @@ export default function RecipeCard() {
                 </ol>
 
                 
-                <button className="ml-20 bg-green-600 text-gray-700 px-4 py-2 rounded hover:bg-gray-300 w-48 mx-auto mt-24">
+                <button onClick={() => setShow(true)} className="ml-20 bg-green-600 text-white px-4 py-2 rounded hover:bg-gray-300 w-48 mx-auto mt-24">
                 Cook this recipe
                 </button>
             </div>
