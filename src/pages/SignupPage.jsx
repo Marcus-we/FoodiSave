@@ -8,9 +8,9 @@ export default function SignupPage() {
     
         <Header/>
 
-        <div className="absolute inset-0 -z-10 bg-cover bg-center bg-[url(./assets/image.png)]"></div>
-            <main className='relative container mx-auto pb-28 pl-28 pr-28 flex-grow'>
-                    <div className='min-h-screen shadow-lg m-10 p-20 rounded bg-white'>
+        <div className="absolute inset-0 -z-10 bg-cover bg-center bg-[url(./assets/BG.png)]"></div>
+            <main className='relative container mx-auto pb-28 pl-28 pr-28 flex-grow nunito'>
+                    <div className='shadow-lg m-10 p-20 rounded bg-white'>
                         <h1 className='text-3xl font-bold text-center'>Sign Up</h1>
                         <h3 className='text-gray-500 pt-4 pb-8 text-center'>Please enter your details below</h3>
                         

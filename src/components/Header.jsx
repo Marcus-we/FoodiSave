@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom'
 export default function Header() {
   return (
     <>
-    <header class="bg-white shadow-md p-4 border-b border-gray-200">
+    <header class="bg-white shadow-md p-4 border-b border-gray-200 nunito">
         <div class="container mx-auto flex justify-between items-center">
             <h1 class="text-2xl font-bold text-green-600"><Link to="/">FoodiSave</Link></h1>
             <nav>
                 <ul class="flex space-x-6">
-                    <li><Link to="/" class="text-gray-700 hover:text-green-600">Home</Link></li>
-                    <li><Link to="/recipe" class="text-gray-700 hover:text-green-600">Recipes</Link></li>
+                    <li className='no-bullet'><Link to="/" class="text-gray-700 hover:text-green-600">Home</Link></li>
+                    <li className='no-bullet'><Link to="/recipe" class="text-gray-700 hover:text-green-600">Randomize recipe</Link></li>
                 </ul>
             </nav>
             <div class="flex space-x-4">

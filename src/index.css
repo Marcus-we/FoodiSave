@@ -6,3 +6,18 @@
     font-weight: 426;
     font-style: normal;
   }
+
+
+body {
+  @apply flex flex-col min-h-screen relative bg-white text-gray-900
+}
+
+li {
+  @apply pt-1 text-lg list-disc list-inside
+
+}
+
+.no-bullet {
+  @apply list-none
+}
+
