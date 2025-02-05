@@ -8,9 +8,7 @@
   }
 
 
-body {
-  @apply flex flex-col min-h-screen relative bg-white text-gray-900
-}
+ 
 
 ol li {
   @apply pt-1 text-lg list-disc list-inside

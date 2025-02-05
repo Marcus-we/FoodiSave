@@ -6,7 +6,7 @@ import FoodImage from "../assets/Food.png";
 export default function RecipeCard( {setShow } ) {
   return (
     <>
-        <main className="container mx-auto pl-10 pr-10 flex-grow nunito">
+        <main className="container mx-auto pl-10 pr-10 pb-10 flex-grow nunito">
          <div className="grid md:grid-cols-2 shadow-lg p-10 rounded bg-white">
             
             <div className='order-2 md:order-1'>
