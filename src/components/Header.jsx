@@ -11,6 +11,7 @@ export default function Header() {
                 <ul class="flex space-x-6">
                     <li className='no-bullet'><Link to="/" class="text-gray-700 hover:text-green-600">Home</Link></li>
                     <li className='no-bullet'><Link to="/recipe" class="text-gray-700 hover:text-green-600">Randomize recipe</Link></li>
+                    <li className='no-bullet'><Link to="/search" class="text-gray-700 hover:text-green-600">Search recipe</Link></li>
                 </ul>
             </nav>
             <div class="flex space-x-4">

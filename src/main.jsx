@@ -6,6 +6,7 @@ import HomePage from './pages/HomePage.jsx'
 import LoginPage from './pages/LoginPage.jsx';
 import SignupPage from './pages/SignupPage.jsx';
 import RecipePage from './pages/RecipePage.jsx';
+import SearchPage from './pages/SearchPage.jsx';
 
 const router = createBrowserRouter([
   {
@@ -30,8 +31,14 @@ const router = createBrowserRouter([
     path:"/recipe",
     element: (
       <RecipePage/>
-    )
-  }
+    ),
+  },
+  {
+    path:"/search",
+    element: (
+      <SearchPage/>
+    ),
+  },
 ]);
 
 createRoot(document.getElementById("root")).render(

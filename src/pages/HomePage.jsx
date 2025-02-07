@@ -26,7 +26,7 @@ export default function HomePage() {
                 </section>
 
                 <main className='grid md:grid-cols-2 mx-auto gap-10 my-6 nunito'>
-                    <Link to="/recipe">
+                    <Link to="/search">
                         <div className='bg-white h-90 w-75 rounded-lg shadow-md'>
                             <h2 className='text-xl text-center pt-2 font-bold mt-20'>Search Algorithm</h2>
                             <p className='text-center p-2'>Looking for something in particular?</p>
