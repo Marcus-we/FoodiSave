@@ -1,18 +1,13 @@
 import React from 'react'
 
-export default function AiCard() {
+export default function AiCard( {data} ) {
   return (
     <>
     
         <section className="nunito container mx-auto p-6 pl-10 pr-10 mb-20 flex-grow grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div id="recipe-container" className="bg-white p-6 shadow-lg rounded-lg border border-gray-200">
-                    <h2 className="text-2xl font-semibold text-green-600">Instructions</h2>
-                    <ol className='p-2 list-inside'>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias modi quos magnam alias obcaecati nihil commodi dignissimos nobis aspernatur quis?</li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus molestias saepe neque commodi sed maxime doloribus ex? Mollitia, autem! Ipsam.</li>
-                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, voluptatum!</li>
-                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quibusdam cupiditate ipsam aut quae molestiae.</li>
-                    </ol>
+                    <h2 className="text-2xl font-semibold text-green-600 pb-4">Instructions</h2>
+                    <p>{data.instructions}</p>
                 </div>
             
             

@@ -7,37 +7,44 @@ import LoginPage from './pages/LoginPage.jsx';
 import SignupPage from './pages/SignupPage.jsx';
 import RecipePage from './pages/RecipePage.jsx';
 import SearchPage from './pages/SearchPage.jsx';
+import Layout from './pages/Layout.jsx';
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: (
-      <HomePage/>
-    ),
-  },
-  {
-    path:"/login",
-    element: (
-      <LoginPage/>
-    ),
-  },
-  {
-    path:"/signup",
-    element: (
-      <SignupPage/>
-    ),
-  },
-  {
-    path:"/recipe",
-    element: (
-      <RecipePage/>
-    ),
-  },
-  {
-    path:"/search",
-    element: (
-      <SearchPage/>
-    ),
+    path:"/",
+    element:<Layout/>,
+    children: [
+      {
+        path: "/",
+        element: (
+          <HomePage/>
+        ),
+      },
+      {
+        path:"/login",
+        element: (
+          <LoginPage/>
+        ),
+      },
+      {
+        path:"/signup",
+        element: (
+          <SignupPage/>
+        ),
+      },
+      {
+        path:"/recipe",
+        element: (
+          <RecipePage/>
+        ),
+      },
+      {
+        path:"/search",
+        element: (
+          <SearchPage/>
+        ),
+      },
+    ],
   },
 ]);
 
