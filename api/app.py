@@ -42,7 +42,7 @@ def read_item(db = Depends(get_db)):
 @app.get("/search")
 def search_recipes(name: str, db = Depends(get_db)):
     with db.cursor() as cursor:
-        cursor.execute("SELECT * FROM recipes WHERE title ILIKE %s", (f"%{name}%",))
+        cursor.execute("SELECT * FROM recipes WHERE title ILIKE %s LIMIT 10", (f"%{name}%",))
         recipes = cursor.fetchall()
     if not recipes:
         raise HTTPException(status_code=404, detail="No recipes found")

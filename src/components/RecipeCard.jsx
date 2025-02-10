@@ -28,7 +28,7 @@ export default function RecipeCard( {setShow, recipe } ) {
                 </button>
             </div>
             <div className='order-1 md:order-2'>
-                <img className='rounded ' src={`../assets/Food Images/${recipe.image + ".jpg"}`} alt="" />
+                <img className='rounded w-full' src={`../assets/Food Images/${recipe.image + ".jpg"}`} alt="" />
                 
             </div>
 
