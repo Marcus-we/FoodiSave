@@ -27,7 +27,7 @@ export default function LoginPage() {
                 <input name='password' placeholder='Enter your password' type="password" className="outline-1 focus:shadow-md rounded p-2 w-full" />
                 </label>
           
-              <button className="bg-green-600 text-gray-700 px-4 py-2 rounded hover:bg-gray-300 w-full mx-auto mt-24">
+              <button className="bg-green-600 text-gray-700 px-4 py-2 rounded hover:bg-green-700 cursor-pointer w-full mx-auto mt-24">
                 Log In
               </button>
             </div>

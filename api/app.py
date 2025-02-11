@@ -2,6 +2,7 @@ from fastapi import FastAPI, Depends, HTTPException
 from db import get_db
 from fastapi.middleware.cors import CORSMiddleware
 from random import randint
+from psycopg2.extras import RealDictCursor
 
 app = FastAPI()
 
@@ -23,17 +24,17 @@ app.add_middleware(
 def read_root():
     return {"Hello": "World"}
 
-@app.get("/items/{item_id}")
-def read_item(item_id: int, db = Depends(get_db)):
-    with db.cursor() as cursor:
-        cursor.execute("SELECT * FROM recipes WHERE id = %s", (item_id,))
+@app.get("/search/{recipe_id}")
+def get_recipe_by_id(recipe_id: int, db = Depends(get_db)):
+    with db.cursor(cursor_factory=RealDictCursor) as cursor:
+        cursor.execute("SELECT * FROM recipes WHERE id = %s", (recipe_id,))
         item = cursor.fetchone()
     return {"item": item}
 
 @app.get("/recipe")
-def read_item(db = Depends(get_db)):
+def get_random_recipe(db = Depends(get_db)):
     with db.cursor() as cursor:
-        cursor.execute("SELECT * FROM recipes WHERE id = %s", (randint(1,13000),))
+        cursor.execute("SELECT * FROM recipes WHERE id = %s", (randint(1,13500),))
         title = cursor.fetchall()
     return {"title": title[0][1], "id": title[0][0], "ingredients": title[0][2], "instructions": title[0][3], "image": title[0][4], "num_of_ingredints": title[0][5]}
 

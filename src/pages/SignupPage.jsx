@@ -29,7 +29,7 @@ export default function SignupPage() {
                 <p className='mt-6'>Password</p>
                 <input name='password' placeholder='Enter your password' type="password" className="outline-1 focus:shadow-md rounded p-2 w-full" />
                 </label>
-                  <button class="bg-green-600 text-gray-700 px-4 py-2 rounded hover:bg-gray-300 w-full mx-auto mt-24">Sign Up</button>
+                  <button class="bg-green-600 text-gray-700 px-4 py-2 rounded hover:bg-green-700 cursor-pointer w-full mx-auto mt-24">Sign Up</button>
               </div>
             </main>
             <Footer/>

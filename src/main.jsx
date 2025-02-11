@@ -5,9 +5,10 @@ import './index.css'
 import HomePage from './pages/HomePage.jsx'
 import LoginPage from './pages/LoginPage.jsx';
 import SignupPage from './pages/SignupPage.jsx';
-import RecipePage from './pages/RecipePage.jsx';
+import RandomPage from './pages/RandomPage.jsx';
 import SearchPage from './pages/SearchPage.jsx';
 import Layout from './pages/Layout.jsx';
+
 
 const router = createBrowserRouter([
   {
@@ -23,7 +24,7 @@ const router = createBrowserRouter([
       {
         path:"/recipe",
         element: (
-          <RecipePage/>
+          <RandomPage/>
         ),
       },
       {

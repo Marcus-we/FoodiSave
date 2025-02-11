@@ -22,7 +22,7 @@ export default function HomePage() {
 
       <main className='grid md:grid-cols-2 mx-auto gap-10 nunito'>
           <Link to="/search">
-              <div className='bg-white h-90 w-75 rounded-lg shadow-md'>
+              <div className='bg-white h-90 w-75 rounded-lg shadow-md hover:shadow-xl'>
                   <h2 className='text-xl text-center pt-2 font-bold mt-20'>Search Algorithm</h2>
                   <p className='text-center p-2'>Looking for something in particular?</p>
                   <p className='text-center p-2'>Use our <span className='font-bold'>advanced algorithm</span> to search through <span className='font-bold'>thousands</span> of meals today</p>
@@ -32,7 +32,7 @@ export default function HomePage() {
           </Link>
 
           <Link to="/recipe">
-              <div className='bg-white h-90 w-75 rounded-lg shadow-md'>
+              <div className='bg-white h-90 w-75 rounded-lg shadow-md hover:shadow-xl'>
                   <h2 className='text-xl text-center pt-2 font-bold mt-20'>Random Recipe Generator</h2>
                   <p className='text-center p-2'>A perfect solution for your needs when your not feeling creative in the kitchen</p>
                   <p className='text-center p-2'>Use our <span className='font-bold'>random recipe generator</span> to find a <span className='font-bold'>perfect meal</span> for you</p>
