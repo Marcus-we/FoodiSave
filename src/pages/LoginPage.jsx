@@ -9,7 +9,7 @@ export default function LoginPage() {
         
         <div className='flex flex-col min-h-screen'>
           <Header/>
-          <div className="absolute inset-0 -z-10 bg-cover bg-center bg-[url(./assets/BG.png)]"></div>
+          <div className="fixed inset-0 -z-10 bg-cover bg-center bg-[url(./assets/BG.png)]"></div>
           
           <div className="relative container mx-auto mt-40 w-160 flex-grow nunito">
             <div className="shadow-lg m-10 p-20 rounded bg-white">

@@ -15,6 +15,7 @@ dist-ssr
 .env
 .__pycache__
 Food Images
+venv
 
 # Editor directories and files
 .vscode/*
